@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniwash Express | Clean Clothes, Good Grades</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #00d4ff;
+            --dark: #333;
+            --light: #f4f7f6;
+            --accent: #ffcc00;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Header & Hero */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* LOGO */
+        .logo {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        /* Sections */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        /* Plans */
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .plan-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        /* Form */
+        .payment-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #004494;
+        }
+
+        /* Info */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .info-image img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .logo {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Uniwash Express Logo" class="logo">
+    <h1>Uniwash Express</h1>
+    <p>"Clean clothes, good grades."</p>
+</header>
+
+<section class="container">
+    <div class="info-grid">
+        <div>
+            <h2 class="section-title" style="text-align:left;">Lead City's Smart Choice</h2>
+            <p>We handle your laundry while you handle your books.</p>
+            <p><i class="fas fa-check-circle"></i> High speed, low cost</p>
+            <p><i class="fas fa-check-circle"></i> On-campus pickup & drop-off</p>
+        </div>
+        <div class="info-image">
+            <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd15?auto=format&fit=crop&w=800&q=80">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Uniwash Express - Lead City University Branch.</p>
+
+    <div style="margin:15px 0;">
+        <a href="https://wa.me/2348079432709" target="_blank" style="color:#25D366;">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a> |
+        <a href="https://chat.whatsapp.com/IqNDzLrXSBC5oJcrRKV8SP" target="_blank" style="color:#25D366;">
+            Group
+        </a> |
+        <a href="mailto:uniwashexpress@gmail.com" style="color:#ffcc00;">
+            Email
+        </a>
+    </div>
+
+    <p>Phone: 08169765890, 07078099540</p>
+</footer>
+
+</body>
+</html>
